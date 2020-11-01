@@ -283,7 +283,7 @@ html {
 
 h1 {
   font-family: 'Lora', serif;
-  font-size: 130px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 92px;
   letter-spacing: 0px;
@@ -632,21 +632,13 @@ footer {
 .blog {
   padding: 80px 0;
   background-color: #f0efed;
-}
-
-.blog-header-img {
-  background-image: url(../../assets/blog-image-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.blog-header-img img {
-  width: 100%;
+  position: relative;
 }
 
 .blog h1 {
   margin-top: -120px;
   padding: 0;
+  position: absolute;
 }
 
 .blog-boxes {
@@ -658,6 +650,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 40px;
 }
 
 .blog-about {
@@ -675,10 +668,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-}
-
-.about-sophie img {
   width: 100%;
 }
 
@@ -818,11 +807,13 @@ input[type="submit"]:focus {
 .contact {
   background-color: #f0efed;
   padding: 80px 0;
+  position: relative;
 }
 
 .contact h1 {
   margin-top: -120px;
-  padding: 0;
+  padding-bottom: 0;
+  position: absolute;
 }
 
 .contact-boxes {
@@ -831,6 +822,7 @@ input[type="submit"]:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 40px;
 }
 
 .address {

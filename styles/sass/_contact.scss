@@ -1,15 +1,18 @@
 .contact{
     background-color: $white-shade;
     padding: 80px 0;
+    position: relative;
 }
 
 .contact h1{
     margin-top: -120px;
-    padding:0;
+    padding-bottom: 0;
+    position: absolute;
 }
 .contact-boxes{
     display: flex;
     flex-wrap: wrap;
+    padding-top:40px ;
 }
 
 .address{

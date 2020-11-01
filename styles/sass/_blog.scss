@@ -6,20 +6,14 @@
 .blog{
     padding: 80px 0;
     background-color: $white-shade;
+    position: relative;
 }
 
-.blog-header-img{
-    background-image: url(../../assets/blog-image-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.blog-header-img img{
-    width: 100%;
-}
 
 .blog h1{
     margin-top: -120px;
     padding:0;
+    position: absolute;
 }
 
 .blog-boxes{
@@ -28,6 +22,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     // align-items: stretch;
+    padding-top: 40px;
 }
 
 .blog-about{
@@ -41,10 +36,6 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-.about-sophie img{
     width: 100%;
 }
 
