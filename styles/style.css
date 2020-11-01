@@ -430,60 +430,99 @@ header {
 }
 
 .sophie-things {
-  background-color: yellow;
+  background-color: #ffffff;
+  position: relative;
 }
 
-.things-box {
+.sophie-boxes {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(350px, auto);
+  grid-auto-rows: auto;
 }
 
-.things-box-text {
-  padding: 45px;
-}
-
-.travelled-box-text {
-  padding: 45px 60px;
-  text-align: right;
-}
-
-.things-box-text h2, .travelled-box-text h2 {
-  margin: 20px 0;
-}
-
-.things-box-text p, .travelled-box-text p {
-  margin-bottom: 40px;
-}
-
-.favourite-things-image {
+/* ABOUT IMG style */
+.sophie-boxes > div:nth-child(1) {
   background-color: #a82706;
-  margin-top: -20px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-.favourite-things-image figure {
-  background-color: green;
-  width: 100%;
-}
-
-.favourite-things-image img {
-  width: 95%;
-  float: right;
-  margin: -20px 15px 0 0;
-  padding-bottom: 15px;
-}
-
-.travelled-image {
+.sophie-boxes > div:nth-child(4) {
   background-color: #f6a823;
-  margin: 15px 0 -30px 0;
+  margin-top: 80px;
+  margin-bottom: -40px;
 }
 
-.travelled-image img {
-  width: 100%;
-  margin: -15px 0 0 -15px;
+.sophie-img-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -20px;
+}
+
+.sophie-img-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sophie-img-box1 .box1 {
+  max-width: 640px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.sophie-img-box1 .box1 img {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.sophie-img-box2 .box4 {
+  margin-left: -20px;
+}
+
+.sophie-img-box2 .box4 img {
+  margin-bottom: 20px;
+  margin-top: -20px;
+  padding-right: 20px;
+}
+
+.sophie-things h3 {
+  padding-bottom: 20px;
+}
+
+.sophie-things p {
+  padding-bottom: 40px;
+}
+
+/* ABOUT TEXT style */
+.sophie-text-box1 {
+  position: relative;
+  max-width: 640px;
+}
+
+.sophie-text-box1 .box2 {
+  padding: 50px 10px 50px 50px;
+}
+
+.sophie-text-box2 {
+  position: relative;
+  text-align: right;
+  max-width: 640px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.sophie-text-box2 .box3 {
+  padding: 50px 70px 50px 10px;
 }
 
 .summary {
