@@ -1,0 +1,45 @@
+.contact{
+    background-color: $white-shade;
+    padding: 80px 0;
+}
+
+.contact h1{
+    margin-top: -120px;
+    padding:0;
+}
+.contact-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address{
+    margin-right: 30px;
+    width: calc(30% - 30px);
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding: 30px;
+} 
+
+.address p{
+    padding: 15px 0;
+}
+.social-links li{
+    display: inline-block;    
+    margin: 5px;
+    padding: 5px;     
+}
+
+.social-links li a{
+    display: block;
+    color:$orange-yellow ;
+    font-size: 30px;
+}
+
+.contact address{
+    font-size: 20px;
+    line-height: 29px;
+}
+.contact-box{
+    width: 70%;
+}

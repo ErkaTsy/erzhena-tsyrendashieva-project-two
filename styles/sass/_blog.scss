@@ -1,0 +1,180 @@
+// header{
+//     height: 100px;
+// }
+
+// BLOG style
+.blog{
+    padding: 80px 0;
+    background-color: $white-shade;
+}
+
+.blog-header-img{
+    background-image: url(../../assets/blog-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-header-img img{
+    width: 100%;
+}
+
+.blog h1{
+    margin-top: -120px;
+    padding:0;
+}
+
+.blog-boxes{
+    // background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: stretch;
+}
+
+.blog-about{
+    // background-color: green;
+    width: 32%;
+    display: block;
+}
+
+.about-sophie{
+    background-color: $white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-sophie img{
+    width: 100%;
+}
+
+.about-sophie h4,
+.about-sophie p{
+    padding-top: 20px;
+}
+
+.post-box{
+    background-color: $white;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.post-box ul{
+    font-size: 20px;
+    line-height: 29px;
+    padding:20px 10px;    
+}
+
+.post-box ul li::before{
+    content: "\2022";
+    color: $orange-yellow;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.blogger-boxes{
+    width: 65%;
+    // background-color: blue;
+}
+
+
+// Blogger boxes
+.blogger-boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // background-color: $white;
+}
+
+.blogger-box1{
+    background-color: $white;
+    width: 100%;
+    padding: 25px;
+    border-bottom: 8px solid $orange-yellow;
+}
+
+.blogger-box1 h3{
+    padding-bottom: 12px;
+}
+.blogger-boxes span{
+    font-size: 20px;
+    color: $dark-grey-blue;
+}
+.blogger-boxes p{
+    padding: 8px 0;
+}
+
+.blogger-box2,
+.blogger-box3{
+    background-color: $white;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.blogger-box3{
+    border-bottom: 8px solid $orange-yellow;
+}
+
+figure, 
+.blogger-text{
+    float: left;
+}
+
+figure{
+    padding-right: 20px;
+    width: calc(30% - 20px);
+    // width: 30%;
+} 
+
+.blogger-text{
+    width: 70%;
+}
+
+
+.blogger-box4{
+    margin: 10px 0;
+    display: inline-block;
+    
+}
+input[type=text],
+input[type="email"],
+input[type="submit"],
+textarea{
+    text-transform: uppercase;
+    font-size: 20px;
+    border-color: $white;
+
+}
+input[type=text],
+input[type="email"]{
+    width: 49%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    color: $black;
+}
+
+input[type=text]{
+    margin-right: 10px;
+}
+
+textarea{
+    width: 100%;
+    min-height: 220px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+input[type="submit"]{
+    background-color: $accent;
+    width: 100%;
+    height: 40px;
+    border-color:  $accent;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+    background-color:$orange-yellow;
+    border-color:  $orange-yellow;
+}
