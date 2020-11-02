@@ -1,10 +1,5 @@
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-
 input[type=text],
 input[type="email"]{
     width: 100%;
@@ -70,7 +65,6 @@ input[type="email"]{
 }
 
 // Blogger boxes
-
 .blogger-box2,
 .blogger-box3{
     background-color: $white;
@@ -83,18 +77,18 @@ input[type="email"]{
     border-bottom: 8px solid $orange-yellow;
 }
 
-figure, 
+.blogger-box3 figure, 
 .blogger-text{
     float: left;
 }
 
-figure{
+.blog figure{
     width: 100%;
     margin-top: -50px;
     padding-bottom: 30px;
 } 
 
-figure img{
+.blog figure img{
     width: 40%;
     box-shadow: 15px 15px $orange-yellow;  
 }
@@ -102,11 +96,6 @@ figure img{
 .blogger-text{
     width: 100%;
 }
-
-}
-
-@media only screen and (max-width: 430px) {
-
 }
 
 

@@ -2,6 +2,9 @@
     background-color: $white-shade;
     padding: 80px 0;
     position: relative;
+    height: auto;
+    height: 85vh;
+
 }
 
 .contact h1{
@@ -12,16 +15,17 @@
 .contact-boxes{
     display: flex;
     flex-wrap: wrap;
-    padding-top:40px ;
+    padding-top:40px;
 }
 
 .address{
     margin-right: 30px;
-    width: calc(30% - 30px);
+    width: calc(35% - 30px);
     display: flex;
     flex-direction: column;
     background-color: $white;
     padding: 30px;
+    min-height: 340px;
 } 
 
 .address p{
@@ -36,7 +40,7 @@
 .social-links li a{
     display: block;
     color:$orange-yellow ;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .contact address{
@@ -44,5 +48,6 @@
     line-height: 29px;
 }
 .contact-box{
-    width: 70%;
+    width: 65%;
 }
+

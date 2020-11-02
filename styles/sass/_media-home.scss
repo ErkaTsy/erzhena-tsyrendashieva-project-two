@@ -1,9 +1,3 @@
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1140px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 .sophie-boxes{
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,7 +34,6 @@ h1{
     font-size: 80px;
 }
 .nav-links{
-    // background-color: forestgreen;
     padding: 10px 0; 
 }
 .nav-links a{
@@ -64,9 +57,7 @@ h1{
 .header-img img{
     box-shadow: 15px 15px $white;   
 }
-
 } 
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -78,18 +69,12 @@ h1{
                          "bx3";
     row-gap: 0;    
 }
-// .sophie-boxes h3,
-// .sophie-boxes p
-// {
-//     text-align: center;
-// }
 .sophie-text-box1 .box2{
     align-items: center;
     padding: 50px 10px;
     text-align: center;
     margin: 0 auto;
 }
-
 .sophie-text-box2 .box3{    
     padding: 80px 10px 50px 10px;
     text-align: center;
@@ -102,7 +87,6 @@ h1{
 .sophie-boxes > div:nth-child(3){   
     border-top: none; 
 }
-
 } 
 
 @media only screen and (max-width: 650px) {
@@ -140,8 +124,7 @@ h1{
     margin:0;
     width: 100%;
     text-align: center;
-}
-   
+}   
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
@@ -211,7 +194,6 @@ h1{
     width: 30%;
 }
 // GALLERY style
-
 .gallery li{  
     width: calc((100% - 30px) / 2);
 }
