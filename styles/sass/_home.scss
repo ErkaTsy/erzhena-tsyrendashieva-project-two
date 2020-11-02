@@ -11,20 +11,26 @@ header{
 }
 
 .nav-links ul{
+    z-index: 1;
     text-align: center;    
 }
+
 .nav-links ul li {
+    display: inline-block;
     margin: 0;
 }
 .nav-links a{
-    padding: 20px 30px; 
+    display: block;
+    margin: 20px;
 }
+
 .nav-links a:link,
 .nav-links a:visited{
     text-decoration: none;
 } 
 .nav-links a:hover,
-.nav-links a:focus{
+.nav-links a:focus{    
+    font-weight: bold;
     color: $white-shade;
 }
 
@@ -34,7 +40,75 @@ header{
     font-weight: bold;
     margin: 0 35px;
     line-height: 0;
+    display: block;
 }
+// HAMBURGER MENU style
+.hamburger{
+    // background-color: red;
+    position: relative;
+    top: 10px;
+    float: right;
+    margin-right: 20px;
+    width: 30px;
+    height: 4px;
+    background-color: $accent;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.4s;
+}
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: $accent;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.hamburger:before{
+    top: -10px;
+    width: 30px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 30px;
+}
+
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    right: 60px;
+    top: 22px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+    background-color: forestgreen;
+}
+
+.hamburger,
+.toggle-menu
+{
+    display: none;
+}
+
+header nav input:checked ~ .hamburger{
+    background: transparent;
+}
+
+header nav input:checked ~ .hamburger:before{
+    top:0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+header nav input:checked ~ .hamburger:after{
+    top:0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
 //HEADER LOGO style
 .header-box{
     display: grid;
@@ -110,13 +184,16 @@ header{
 /* ABOUT IMG style */
 .sophie-boxes > div:nth-child(1){   
     background-color: $rust-red;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+    align-self: start;
 }
 .sophie-boxes > div:nth-child(4){
     background-color:$orange-yellow;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: -40px;
+    align-self: end;
 }
+
 
 .sophie-img-box1{
     display:flex;
@@ -126,7 +203,8 @@ header{
 
 .sophie-img-box2{
     display: flex;
-    justify-content: flex-start;    
+    justify-content: flex-start; 
+    align-content: flex-end;
 }
 
 .sophie-img-box1 .box1{
@@ -151,7 +229,6 @@ header{
     margin-top: -20px;
     padding-right: 20px;
 }
-
 .sophie-things h3{
     padding-bottom: 20px;
 }
@@ -231,7 +308,6 @@ header{
 }
 // Journey style
 .journey{
-    background-color: brown;
     height: auto;
     position: relative;
 }
@@ -290,3 +366,4 @@ footer{
     font-size: 20px;
     
 }
+

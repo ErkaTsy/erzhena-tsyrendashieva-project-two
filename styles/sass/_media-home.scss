@@ -1,0 +1,230 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1140px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+.sophie-boxes{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "bx1 bx2 bx2"
+                         "bx3 bx3 bx4";
+    row-gap: 20px;
+}
+
+.sophie-img-box1{
+    grid-area: bx1; 
+}
+
+.sophie-text-box1{
+    grid-area: bx2; 
+}
+.sophie-text-box2{
+    grid-area: bx3; 
+}
+.sophie-img-box2{
+    grid-area: bx4; 
+}
+
+/* ABOUT IMG style */
+.sophie-boxes > div:nth-child(2){  
+    border-bottom: 1px solid $rust-red; 
+}
+.sophie-boxes > div:nth-child(3){   
+    border-top: 1px solid $orange-yellow; 
+}
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 814px) {
+h1{
+    font-size: 80px;
+}
+.nav-links{
+    // background-color: forestgreen;
+    padding: 10px 0; 
+}
+.nav-links a{
+    margin: 20px 10px;
+}
+
+.nav-links span{
+    font-size: 60px;
+    margin: 0 20px;
+}
+
+//HEADER LOGO style
+.logo-box h1{
+    margin-top: -30px;
+    margin-left: 40px;   
+}
+.header-img{
+    margin-bottom: -50px;
+    margin-right: 30px;
+}
+.header-img img{
+    box-shadow: 15px 15px $white;   
+}
+
+} 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .sophie-boxes{
+    grid-template-columns: 1fr;
+    grid-template-areas: "bx1"
+                         "bx2"
+                         "bx4"
+                         "bx3";
+    row-gap: 0;    
+}
+// .sophie-boxes h3,
+// .sophie-boxes p
+// {
+//     text-align: center;
+// }
+.sophie-text-box1 .box2{
+    align-items: center;
+    padding: 50px 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sophie-text-box2 .box3{    
+    padding: 80px 10px 50px 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* ABOUT IMG style */
+.sophie-boxes > div:nth-child(2){  
+    border-bottom: none; 
+}
+.sophie-boxes > div:nth-child(3){   
+    border-top: none; 
+}
+
+} 
+
+@media only screen and (max-width: 650px) {
+h1{
+    font-size: 60px;
+}
+.nav-links a{
+    margin: 20px 10px;
+    font-size: 18px;
+}
+
+.nav-links span{
+    font-size: 50px;
+    margin: 0 10px;
+}
+
+//HEADER LOGO style
+.logo-box h1{    
+    margin-top: -40px;
+    margin-left: 35px;   
+}
+.logo-box img{
+    width: 40%;
+}
+// SUMMARY style
+.summary-boxes>div{
+    flex: 0 0 100%;
+}
+// Journey style
+.journey figure{
+    margin-right: 0;
+    width: 100%;
+}
+.journey-summary{
+    margin:0;
+    width: 100%;
+    text-align: center;
+}
+   
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+.nav-links{
+    height: 60px;
+    padding: 20px 0;
+}
+.header-img{
+    margin-bottom: -30px;
+}
+.hamburger,
+.toggle-menu{
+    display: block;
+}
+
+.nav-links input:checked ~ ul
+{
+  transform: none;  
+}
+
+.menu{   
+    position: absolute;
+    background-color: #F4F4F4 ;
+    width: 80%;
+    padding: 40px;
+    list-style-type: none;
+    transform: translate(-120%, 0);
+}
+
+.nav-links ul li{
+     display: block;
+     padding: 10px 0;
+     border-bottom: 2px solid $orange-yellow;
+ }
+ .menu li a{
+     display: block;
+     padding: 10px 0;
+ } 
+.menu span{
+    font-size: 50px;
+    padding: 20px 0 40px 0; 
+    display: block;
+    margin: 20px;
+}
+.nav-links a:hover,
+.nav-links a:focus{
+    color: $accent;
+}
+// ABOUT style
+.about{
+    background-color: $white-shade;
+    height: auto;
+    padding: 60px 0 100px 0;   
+    text-align: center;
+}
+
+
+
+}
+
+@media only screen and (max-width: 490px) {
+h1{
+    font-size: 42px;
+}
+.logo-box h1{
+    margin-top: -40px;
+    margin-left: 20px;   
+}
+.logo-box img{
+    width: 30%;
+}
+// GALLERY style
+
+.gallery li{  
+    width: calc((100% - 30px) / 2);
+}
+
+.gallery li:nth-child(2){
+    margin-right: 0;
+}
+.gallery li:nth-child(3){
+    display: none;
+}
+}
+
+
